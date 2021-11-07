@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoButton Component should match the snapshot 1`] = `
+<MoButton
+  classes={
+    Object {
+      "button": "MoButton-button-1",
+      "icon": "MoButton-icon-2",
+      "noShadow": "MoButton-noShadow-3",
+    }
+  }
+/>
+`;
