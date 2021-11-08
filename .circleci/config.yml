@@ -32,6 +32,6 @@ jobs:
           name: Deploy
           command: |
             if [ "$CIRCLE_BRANCH" = "release" ]; then
-              yarn run firebase use pruebasquizappweb
-              yarn run firebase deploy --only hosting:purebasquizappweb --token=$FIREBASE_TOKEN
+              yarn run firebase use uniquiz-webapp
+              yarn run firebase deploy --only hosting:uniquiz-webapp --token=$FIREBASE_TOKEN
             fi
