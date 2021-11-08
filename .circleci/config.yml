@@ -2,6 +2,8 @@
 # Check https://circleci.com/docs/2.0/ for more details
 
 version: 2.1
+env:
+  CI: false
 
 jobs:
   build:
