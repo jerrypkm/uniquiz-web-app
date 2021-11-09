@@ -1,103 +1,102 @@
 {
-	"name": "motemplate",
-	"version": "1.0.0",
-	"private": true,
-	"dependencies": {
-		"@material-ui/core": "^4.11.0",
-		"@material-ui/icons": "^4.9.1",
-		"@sentry/browser": "^5.24.2",
-		"firebase": "^7.24.0",
-		"material-table": "^1.69.0",
-		"react": "^16.13.1",
-		"react-beautiful-dnd": "^13.0.0",
-		"react-dom": "^16.13.1",
-		"react-hook-form": "^6.8.4",
-		"react-live": "^2.2.2",
-		"react-router-dom": "^5.2.0",
-		"react-scripts": "3.4.3",
-		"react-typist": "^2.0.5",
-		"recompose": "^0.30.0",
-		"string-similarity": "^4.0.2",
-		"use-global-hook": "^0.2.1"
-	},
-	"scripts": {
-		"analyze": "source-map-explorer build/static/js/main.*",
-		"start": "react-scripts start",
-		"build": "react-scripts build && cp build/index.html functions/public/index.html",
-		"deploy": "npm run lint && react-scripts build && firebase deploy --only hosting:YOUR_PROJECT",
-		"deployFn": "firebase deploy --only functions:preRender",
-		"check-updates": "ncu -u",
-		"test": "react-scripts test",
-		"test:watch": "react-scripts test --bail --updateSnapshot --watch",
-		"ci-test": "cross-env CI=true react-scripts test --env=jsdom",
-		"eject": "react-scripts eject",
-		"lint": "eslint './src/**/*.{js,jsx}' --fix",
-		"prettier": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
-		"pre-push": "eslint './src/**/*.{js,jsx}' --fix && prettier --write 'src/**/*.{js,jsx,css,scss}' && cross-env CI=true react-scripts test --env=jsdom",
-		"storybook": "start-storybook -p 9009 -s public",
-		"build-storybook": "build-storybook -s public",
-		"deploy-storybook": "storybook-to-ghpages"
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "lint-staged"
-		}
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^11.0.0",
-		"@commitlint/config-conventional": "^11.0.0",
-		"@storybook/addon-actions": "^6.0.21",
-		"@storybook/addon-knobs": "^6.0.21",
-		"@storybook/addon-links": "^6.0.21",
-		"@storybook/addon-storysource": "^6.0.21",
-		"@storybook/addon-viewport": "^6.0.21",
-		"@storybook/addons": "^6.0.21",
-		"@storybook/preset-create-react-app": "^3.1.4",
-		"@storybook/react": "^6.0.21",
-		"@storybook/storybook-deployer": "^2.8.6",
-		"@testing-library/react-hooks": "^3.4.1",
-		"@types/jest": "^26.0.14",
-		"cross-env": "^7.0.2",
-		"eslint-config-airbnb": "^18.2.0",
-		"eslint-config-prettier": "^6.11.0",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-jsx-a11y": "^6.3.1",
-		"eslint-plugin-react": "^7.20.6",
-		"firebase-tools": "^9.22.0",
-		"husky": "^4.3.0",
-		"imagemin-lint-staged": "^0.4.0",
-		"lint-staged": "^10.4.0",
-		"prettier-eslint-cli": "^5.0.0",
-		"react-test-renderer": "^16.13.1",
-		"source-map-explorer": "^2.5.0"
-	},
-	"lint-staged": {
-		"src/**/*.{js,jsx}": [
-			"eslint --fix",
-			"prettier-eslint --write",
-			"git add"
-		],
-		"*.{png,jpeg,jpg,gif,svg}": [
-			"imagemin-lint-staged",
-			"git add"
-		]
-	}
+  "name": "motemplate",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@sentry/browser": "^5.24.2",
+    "firebase": "^7.24.0",
+    "material-table": "^1.69.0",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^6.8.4",
+    "react-live": "^2.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-typist": "^2.0.5",
+    "recompose": "^0.30.0",
+    "string-similarity": "^4.0.2",
+    "use-global-hook": "^0.2.1"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp build/index.html functions/public/index.html",
+    "deploy": "npm run lint && react-scripts build && firebase deploy --only hosting:uniquiz-webapp",
+    "deployFn": "firebase deploy --only functions:preRender",
+    "check-updates": "ncu -u",
+    "test": "react-scripts test",
+    "test:watch": "react-scripts test --bail --updateSnapshot --watch",
+    "ci-test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint './src/**/*.{js,jsx}' --fix",
+    "prettier": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
+    "pre-push": "eslint './src/**/*.{js,jsx}' --fix && prettier --write 'src/**/*.{js,jsx,css,scss}' && cross-env CI=true react-scripts test --env=jsdom",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-knobs": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-storysource": "^6.0.21",
+    "@storybook/addon-viewport": "^6.0.21",
+    "@storybook/addons": "^6.0.21",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.21",
+    "@storybook/storybook-deployer": "^2.8.6",
+    "@testing-library/react-hooks": "^3.4.1",
+    "@types/jest": "^26.0.14",
+    "cross-env": "^7.0.2",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "husky": "^4.3.0",
+    "imagemin-lint-staged": "^0.4.0",
+    "lint-staged": "^10.4.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "react-test-renderer": "^16.13.1",
+    "source-map-explorer": "^2.5.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier-eslint --write",
+      "git add"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+      "imagemin-lint-staged",
+      "git add"
+    ]
+  }
 }

@@ -1,8 +1,8 @@
 {
   "projects": {
-    "development": "UNIQUIZ WebApp",
-    "default": "uniquiz-webapp",
-    "production": "UNIQUIZ WebApp",
-    "website": "uniquiz-webapp.web.app"
+    "development": "UNIQUIZ dev WebApp",
+    "production": "UNIQUIZ pord WebApp",
+    "website": "uniquiz-webapp",
+    "prueba": "uniquiz-webapp"
   }
 }
