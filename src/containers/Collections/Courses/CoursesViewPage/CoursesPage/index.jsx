@@ -24,7 +24,7 @@ const CoursesPage = ({
   firebase,
   isLoading,
   isAdmin,
-  itemOptions,
+  itemOptions
 }) => {
   if (isLoading) {
     return null;
@@ -34,6 +34,7 @@ const CoursesPage = ({
     <Container maxWidth="lg">
       <Navigation authUser={authUser} firebase={firebase} />
       <MoPage title={collectionDetails?.title}>
+        <div> ptmmm</div>
         <Grid container spacing={4} alignItems="center">
           <CardList
             isAdmin={isAdmin}
