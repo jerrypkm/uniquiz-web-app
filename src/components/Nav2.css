@@ -81,6 +81,24 @@
   display: none;
 }
 
+.burger {
+  display: none;
+}
+
+/* media query burger */
+@media only screen and (max-width: 800px) {
+  .burger {
+    display: initial;
+    width: 2.5em;
+    margin-left: 1.2em;
+  }
+
+  .burger:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
+  }
+}
+
 .overlay {
   height: 100%;
   width: 0;

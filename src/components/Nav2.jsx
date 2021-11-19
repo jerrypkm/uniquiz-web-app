@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav2.css";
-
+import Burger from "./burger-menu.png";
 class Nav2 extends React.Component {
   render() {
     return (
@@ -33,6 +33,7 @@ class Nav2 extends React.Component {
             Quizate!
           </a>
           <p className="menu cta">Quizate!</p>
+          <img src={Burger} className="burger" alt="menu" />
         </header>
 
         <div id="mobile__menu" class="overlay">
